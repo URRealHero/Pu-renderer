@@ -5,7 +5,7 @@
 #include <iostream>
 
 color ray_color(const ray& r) {
-    return {0,0,0}
+    return {0,0,0};
 }
 
 int main() {
@@ -16,7 +16,7 @@ int main() {
 
     // Calculate the height of the image
     int image_height = static_cast<int>(image_width / aspect_ratio);
-    image_height = image < 1 ? 1 : image_height;
+    image_height = image_height < 1 ? 1 : image_height;
 
     // Camera
     auto focal_length = 1;
