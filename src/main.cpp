@@ -2,19 +2,20 @@
 #include "vec3.h"
 #include "ray.h"
 
+#include <cmath>
 #include <iostream>
 
 double hit_sphere(const point3& center, double radius, const ray& r) {
     vec3 oc = center - r.origin();
     auto a = dot(r.direction(), r.direction());
-    auto b = -2.0 * dot(r.direction(), oc);
-    auto c = dot(oc, oc) - radius*radius;
-    auto discriminant = b*b - 4*a*c;
+    auto h = dot(oc, r.direction());
+    auto c = oc.length_squared() - radius*radius;
+    auto discriminant = h*h - a*c;
 
     if (discriminant < 0) {
         return -1.0;
     } else {
-        return (-b - std::sqrt(discriminant) ) / (2.0*a); // 计算最近的交点(现在还不需要考虑t是负值)
+        return (h-std::sqrt(discriminant)/a); // 计算最近的交点(现在还不需要考虑t是负值)
     }
 }
 
