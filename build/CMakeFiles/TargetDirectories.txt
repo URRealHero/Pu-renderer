@@ -1,0 +1,3 @@
+/home/pu/PuFiles/3D/Pu-renderer/build/CMakeFiles/main.dir
+/home/pu/PuFiles/3D/Pu-renderer/build/CMakeFiles/edit_cache.dir
+/home/pu/PuFiles/3D/Pu-renderer/build/CMakeFiles/rebuild_cache.dir
