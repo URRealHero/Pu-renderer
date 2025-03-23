@@ -16,3 +16,7 @@ src/
 ├── hittable.h # Hittable object abstract header
 ├── hittable_list.h # list of hittable objects
 └── sphere.h # sphere hittable
+
+## What do renderer do?
+- Use viewport to get the 3D scene
+- Image samples from viewport plane
