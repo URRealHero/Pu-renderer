@@ -1,7 +1,6 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
  /home/pu/PuFiles/3D/Pu-renderer/src/main.cpp /usr/include/stdc-predef.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/interval.h \
- /usr/include/c++/11/limits \
+ /home/pu/PuFiles/3D/Pu-renderer/src/utils.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,7 +11,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/utils.h /usr/include/c++/11/cmath \
  /usr/include/c++/11/bits/cpp_type_traits.h \
  /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -183,6 +181,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/ray.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/interval.h \
+ /usr/include/c++/11/limits /home/pu/PuFiles/3D/Pu-renderer/src/camera.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/hittable/../utils.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable_list.h \

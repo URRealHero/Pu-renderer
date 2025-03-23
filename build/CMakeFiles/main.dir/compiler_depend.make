@@ -194,8 +194,8 @@ CMakeFiles/main.dir/src/basic_impl/color.cpp.o: ../src/basic_impl/color.cpp \
 
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
-  ../src/basic_impl/interval.h \
-  /usr/include/c++/11/limits \
+  ../src/utils.h \
+  /usr/include/c++/11/cmath \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -207,8 +207,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
-  ../src/utils.h \
-  /usr/include/c++/11/cmath \
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/math.h \
@@ -414,12 +412,19 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/basic_impl/vec3.h \
   ../src/basic_impl/ray.h \
   ../src/basic_impl/vec3.h \
+  ../src/basic_impl/interval.h \
+  /usr/include/c++/11/limits \
+  ../src/camera.h \
   ../src/hittable/hittable.h \
   ../src/utils.h \
   ../src/hittable/hittable_list.h \
   ../src/hittable/hittable.h \
   ../src/hittable/sphere.h
 
+
+../src/camera.h:
+
+/usr/include/c++/11/limits:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -432,6 +437,10 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/array:
+
+../src/basic_impl/interval.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
@@ -446,12 +455,6 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/memory:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-../src/basic_impl/interval.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
