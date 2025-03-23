@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/src/main.cpp.o: \
- /home/pu/PuFiles/3D/Pu-renderer/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/main.dir/src/main.cc.o: \
+ /home/pu/PuFiles/3D/Pu-renderer/src/main.cc /usr/include/stdc-predef.h \
  /home/pu/PuFiles/3D/Pu-renderer/src/utils.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -173,16 +173,13 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/color.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/vec3.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/ray.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/hittable.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/hittable_list.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/color.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/ray.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/../utils.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable_list.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/sphere.h
+ /home/pu/PuFiles/3D/Pu-renderer/src/sphere.h

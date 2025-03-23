@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/src/color.cpp.o"
-  "CMakeFiles/main.dir/src/color.cpp.o.d"
+  "CMakeFiles/main.dir/src/basic_impl/color.cpp.o"
+  "CMakeFiles/main.dir/src/basic_impl/color.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
   "main"

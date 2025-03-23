@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pu/PuFiles/3D/Pu-renderer/src/color.cpp" "CMakeFiles/main.dir/src/color.cpp.o" "gcc" "CMakeFiles/main.dir/src/color.cpp.o.d"
+  "/home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/color.cpp" "CMakeFiles/main.dir/src/basic_impl/color.cpp.o" "gcc" "CMakeFiles/main.dir/src/basic_impl/color.cpp.o.d"
   "/home/pu/PuFiles/3D/Pu-renderer/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 

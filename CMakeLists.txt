@@ -13,10 +13,9 @@ include_directories(src)
 # 源文件
 set(SOURCES
     src/main.cpp
-    src/color.cpp
+    src/basic_impl/color.cpp
 
-    src/color.h
-    src/vec3.h
+
 )
 
 # 创建可执行文件

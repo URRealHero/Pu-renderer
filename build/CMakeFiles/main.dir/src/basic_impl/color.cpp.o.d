@@ -1,6 +1,9 @@
-CMakeFiles/main.dir/src/main.cpp.o: \
- /home/pu/PuFiles/3D/Pu-renderer/src/main.cpp /usr/include/stdc-predef.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/utils.h /usr/include/c++/11/cmath \
+CMakeFiles/main.dir/src/basic_impl/color.cpp.o: \
+ /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/color.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/color.h \
+ /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
+ /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -155,34 +158,4 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/limits \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_tempbuf.h \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/ext/concurrence.h \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/color.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/ray.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/basic_impl/vec3.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/../utils.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable_list.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/hittable.h \
- /home/pu/PuFiles/3D/Pu-renderer/src/hittable/sphere.h
+ /usr/include/c++/11/bits/istream.tcc
