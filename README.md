@@ -4,6 +4,7 @@ Next, I will realize the Rasterizer, which serve as the purpose in the graphics 
 First six chapters done, finishing the simple ray tracing renderer. 
 
 ## Ray Tracing Project Structure
+```
 src/
 ├── main.cpp
 ├── utils.h # gathering header
@@ -17,7 +18,7 @@ src/
 ├── hittable.h # Hittable object abstract header
 ├── hittable_list.h # list of hittable objects
 └── sphere.h # sphere hittable
-
+```
 ## What do renderer do?
 - Use viewport to get the 3D scene
 - Image samples from viewport plane
