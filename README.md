@@ -1,8 +1,9 @@
 # Pu-renderer
-Implementation of a personalised renderer, start from Ray-Tracing weekend series. This is only a renderer, which serve as the purpose in the graphics pipeline.
-First six chapters done, finishing the simple rasterizer. 
+Implementation of a personalised renderer, start from Ray-Tracing weekend series. Now only implement ray tracing renderer.
+Next, I will realize the Rasterizer, which serve as the purpose in the graphics pipeline.
+First six chapters done, finishing the simple ray tracing renderer. 
 
-## Project Structure
+## Ray Tracing Project Structure
 src/
 ├── main.cpp
 ├── utils.h # gathering header
