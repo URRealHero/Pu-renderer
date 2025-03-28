@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/link.d"
   "CMakeFiles/main.dir/src/basic_impl/color.cpp.o"
   "CMakeFiles/main.dir/src/basic_impl/color.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"

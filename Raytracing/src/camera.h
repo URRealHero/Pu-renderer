@@ -1,7 +1,10 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "utils.h"
+#include "basic_impl/funcs.h"
+#include "basic_impl/vec3.h"
+#include "headers.h"
+#include "hittable/material.h"
 #include "hittable/hittable.h"
 
 class camera {
@@ -11,6 +14,7 @@ class camera {
     int    image_width  = 400;       // Rendered image width in pixel count
     double focal_length = 1.0;       // Distance from camera center to viewport plane
     double viewport_height = 2.0;    // Height of the viewport
+    int max_depth = 10;
     
     int samples_per_pixel = 10; // sample times
 
@@ -25,7 +29,7 @@ class camera {
                 color pixel_color(0,0,0);
                 for (int cnt = 0; cnt < samples_per_pixel; cnt++) {
                     ray r = get_ray(i, j);
-                    pixel_color += ray_color(r, world);
+                    pixel_color += ray_color(r, world, max_depth);
                 }
                 pixel_color /= samples_per_pixel;
                 write_color(std::cout, pixel_color);
@@ -82,10 +86,23 @@ class camera {
         return vec3(generate_random_double() - 0.5, generate_random_double() - 0.5, 0); // 在这个方块里随机取一个点
     }
 
-    color ray_color(const ray& r, const hittable& world) {
+    color ray_color(const ray& r, const hittable& world, int depth) const {
+        if (depth <= 0) {
+            return color(0,0,0);
+        }
+
         hit_record rec;
-        if (world.hit(r, interval(0, infinity), rec)) {
-            return 0.5 * (rec.normal + color(1,1,1));
+        if (world.hit(r, interval(0.001, infinity), rec)) {
+            // return 0.5 * (rec.normal + color(1,1,1)); // 现在只是简单的法向量可视化
+            // vec3 dir = random_unit_vector_on_hemispere(rec.normal);
+            ray scattered;
+            color attenuation;
+            if (rec.mat_ptr->scatter(r, rec, attenuation, scattered)) {
+                return attenuation * ray_color(scattered, world, depth-1);
+            }
+            return color(0,0,0);
+
+            // return 0.5 * ray_color(ray(rec.p, dir), world, depth-1); // 0.5是衰减系数
         }
 
         vec3 unit_direction = unit_vector(r.direction());

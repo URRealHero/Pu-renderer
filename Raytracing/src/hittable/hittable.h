@@ -2,7 +2,10 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
-#include "../utils.h"
+#include "../headers.h"
+#include <memory>
+
+class material;
 
 class hit_record{
     public:
@@ -10,6 +13,7 @@ class hit_record{
         vec3 normal;
         double t;
         bool front_face;
+        std::shared_ptr<material> mat_ptr;
 
         void set_norm(const ray& r, const vec3& outward_normal){
             front_face = dot(r.direction(), outward_normal) < 0;
