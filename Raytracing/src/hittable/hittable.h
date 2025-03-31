@@ -7,9 +7,9 @@
 
 class material;
 
-class hit_record{
+class hit_record{ // 每次光线和物体相交时，记录相交点的信息
     public:
-        point3 p;
+        point3 p; // 交点
         vec3 normal;
         double t;
         bool front_face;

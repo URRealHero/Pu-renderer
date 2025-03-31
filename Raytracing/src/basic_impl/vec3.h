@@ -113,6 +113,14 @@ inline vec3 unit_vector(const vec3& v) {
     return v / v.length();
 }
 
+inline vec3 random_in_unit_disk() {
+    while (true) {
+        auto p = vec3(generate_random_double(-1,1), generate_random_double(-1,1), 0);
+        if (p.length_squared() < 1)
+            return p;
+    }
+}
+
 inline vec3 random_unit_vector(){
     while(true){
         auto p = vec3::random(-1, 1);
@@ -127,8 +135,15 @@ inline vec3 random_unit_vector_on_hemispere(const vec3& normal){
     return dot(p, normal) > 0.0 ? p : -p;
 }
 
-inline vec3 reflect(const vec3& v, const vec3& n) {
+inline vec3 reflect(const vec3& v, const vec3& n) { // 镜面反射
     return v - 2*dot(v,n)*n;
+}
+
+inline vec3 refract(const vec3& v, const vec3& n, double eta_ratio){
+    auto cos_theta = fmin(dot(-v, n), 1.);
+    vec3 r_o_perp = eta_ratio * (v + cos_theta * n);
+    vec3 r_o_par = std::sqrt(std::fabs(1-r_o_perp.length_squared())) * -n;
+    return r_o_perp + r_o_par;
 }
 
 #endif
