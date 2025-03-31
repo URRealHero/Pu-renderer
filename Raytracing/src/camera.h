@@ -124,7 +124,7 @@ class camera {
     color ray_color(const ray& r, const hittable& world, int depth) const {
         // 主要渲染算法
         if (depth <= 0) {
-            return color(0,0,0); // 如果递归结束，最后将没有碰撞
+            return color(0,0,0); // 如果递归结束，说明光线碰撞次数过多，这条光路不再计算（人工设定的，避免自相交）
         }
 
         hit_record rec;
@@ -133,14 +133,14 @@ class camera {
             ray scattered;
             color attenuation;
             if (rec.mat_ptr->scatter(r, rec, attenuation, scattered)) {
-                // 根据材质，进行光线的下一次传播 （注意，调用scatter函数）
+                // 根据材质，进行光线的下一次传播，每次都乘以材质的衰减系数
                 return attenuation * ray_color(scattered, world, depth-1);
             }
-            return color(0,0,0);
+            return color(0,0,0); // 如果不会scatter，说明光线被吸收，不再计算
 
             // return 0.5 * ray_color(ray(rec.p, dir), world, depth-1); // 0.5是衰减系数
         }
-
+        // 如果不再有碰撞，这条光路会射到环境中，由于本代码里，环境是光源，所以这条光路能表现出颜色，颜色为天空颜色
         vec3 unit_direction = unit_vector(r.direction());
         auto a = 0.5*(unit_direction.y() + 1.0);
         return (1.0-a)*color(1.0, 1.0, 1.0) + a*color(0.5, 0.7, 1.0);

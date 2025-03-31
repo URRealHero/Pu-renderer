@@ -1,7 +1,16 @@
 # Pu-renderer
 Implementation of a personalised renderer, start from Ray-Tracing weekend series. Now only implement ray tracing renderer.
 Next, I will realize the Rasterizer, which serve as the purpose in the graphics pipeline.
-First six chapters done, finishing the simple ray tracing renderer. 
+
+### Already done
+- Mar 31, 2025 finished __Raytracing in one weekend__ coding.
+
+### Todo
+- [ ] Review the code, get the raytracing pipeline
+- [ ] Rasterizer
+- [ ] Ray Tracing series!
+- [ ] Triangles, Parallelism and Shadow Rays!
+
 
 ## Ray Tracing Project Structure
 ```
